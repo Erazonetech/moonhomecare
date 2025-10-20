@@ -1,23 +1,21 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Stats from "./components/Stats";
-import Services from "./components/Services";
-import About from "./components/About";
-import Downloads from "./components/Downloads";
-import Contact from './components/Contact';
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Aboutpage from "./page/Aboutpage";
+import Homepage from "./page/Homepage";
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+// import About from "./page/Aboutpage";
 
 function App() {
   return (
     <div className="overflow-hidden">
-      <Navbar />
-      <Hero />
-      <Stats />
-      <Services />
-      <About />
-      <Downloads />
-      <Contact />
-      <Footer />
+      <BrowserRouter>
+       <Navbar/>
+        <Routes>
+          <Route path="/" element={<Homepage/>}/>
+          <Route path="/about" element={<Aboutpage/>}/>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
     </div>
   );
 }
