@@ -23,13 +23,18 @@ function Hero() {
           <select className='py-2 px-4 text-xl capitalize bg-white border rounded w-full md:w-[200px]'>
             <option value="/">region</option>
             <option value="wolaita">wolaita</option>
-            <option value="hawassa">hawassa</option>
-            <option value="Arba minch">Arba minch</option>
+            <option value="sidama">Sidama</option>
+            <option value="gamo">Gamo</option>
+            <option value="gofa">Gofa</option>
+            <option value="dawuro">Dawuro</option>
           </select>
           <select className='py-2 px-4 text-xl capitalize bg-white border rounded w-full md:w-[200px]'>
-            <option value="/">Sodo</option>
-            <option value="Dawuro">Dawuro</option>
-            <option value="Boditi">Boditi</option>
+            <option value="/">City</option>
+            <option value="sodo">Sodo</option>
+            <option value="hawassa">Hawassa</option>
+            <option value='arbaminch'>Arbaminch</option>
+            <option value='sawula'>Sawula</option>
+            <option value='tarcca'>Tarcca</option>
           </select>
           <button className='bg-[#0079FF] py-3 px-4 rounded flex items-center justify-center w-full md:w-fit'><FiSearch size={20} color='white'/></button>
         </form>
