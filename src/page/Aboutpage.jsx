@@ -2,10 +2,10 @@ import React from 'react'
 import About from '../components/About';
 
 
-function Aboutpage() {
+function Aboutpage({setIsAbout}) {
   return (
     <div>
-        <About/>
+        <About setIsAbout={setIsAbout}/>
     </div>
   )
 }
