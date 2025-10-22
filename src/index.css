@@ -47,7 +47,11 @@ html {
   }
   .team div img{
     /* z-index: -10; */
-    width: 80%;
+    width: 50%;
+  }
+  .team div div{
+    width: 40%;
+    left: 30%;
   }
   .desc{
     z-index: 999;
