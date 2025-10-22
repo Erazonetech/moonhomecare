@@ -2,6 +2,7 @@ import React from 'react';
 import {useState} from 'react';
 import {BsHeartPulseFill} from 'react-icons/bs';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
@@ -23,7 +24,7 @@ function Navbar() {
         <ul className="hidden md:flex items-center gap-6">
             <a href="/"><li className="text-lg cursor-pointer hover:text-[#0079FF] hover:font-bold hover:border-b hover:border-b-[#0079FF] ease-linear duration-100">Welcome</li></a>
             <a href="#services"><li className="text-lg cursor-pointer hover:text-[#0079FF] hover:font-bold hover:border-b hover:border-b-[#0079FF] ease-linear duration-100">Services</li></a>
-            <a href="#about"><li className="text-lg cursor-pointer hover:text-[#0079FF] hover:font-bold hover:border-b hover:border-b-[#0079FF] ease-linear duration-100">About</li></a>
+            <Link to="about"><li className="text-lg cursor-pointer hover:text-[#0079FF] hover:font-bold hover:border-b hover:border-b-[#0079FF] ease-linear duration-100">About</li></Link>
             <a href="#contact"><li className="text-lg cursor-pointer hover:text-[#0079FF] hover:font-bold hover:border-b hover:border-b-[#0079FF] ease-linear duration-100">Contact</li></a>
             {/* later it will be a button */}
             <li className="text-lg bg-[#0079FF] w-[150px] rounded-full text-white font-bold text-center py-2 cursor-pointer">To start</li>
@@ -41,7 +42,7 @@ function Navbar() {
             <ul className='uppercase font-bold p-4'> 
                 <a href="/"><li className='p-4 border-b cursor-pointer'>Welcome</li></a>
                 <a href="#services"><li className='p-4 border-b cursor-pointer'>Services</li></a>
-                <a href="#about"><li className='p-4 border-b cursor-pointer'>About</li></a>
+                <Link to={'/about'}><li className='p-4 border-b cursor-pointer'>About</li></Link>
                 <a href="#contact"><li className='p-4 border-b cursor-pointer'>Contact</li></a>
                 {/* later it will be a button */}
                 <li className="m-4 bg-white w-[150px] rounded-full text-[#0079FF] font-bold text-center py-2 cursor-pointer">To start</li>
